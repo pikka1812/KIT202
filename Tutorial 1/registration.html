@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Marathon Registration</h1>
+    <form>
+        <!-- Each row in the table is a field in the form and will have 2 columns: 1 for label, 1 for input so it will align pretty-->
+        <table>
+
+            <!-- First name (Required)-->
+            <tr>
+                <td>First name</td>
+                <td><input type="text" id = "fname" required></td>
+            </tr>
+
+            <!-- Last name (Required)-->
+            <tr>
+                <td>Last name</td>
+                <td><input type="text" id = "lname" required></td>
+            </tr>
+
+            <!-- Gender -->
+            <tr>
+                <td>Gender</td>
+                <td>
+                    <!--Because they are group so they should have the same name so only 1 could be chosen -->
+                    <input type="radio" id="female" name="gender" value="Female">
+                    <label for="female">Female</label>
+                    <input type="radio" id="male" name="gender" value="Male">
+                    <label for="Male">Male</label>
+                    <input type="radio" id="other" name="gender" value="Other">
+                    <label for="other">Other</label>
+                </td>
+            </tr>
+            
+            <!-- Race (Required)-->
+            <tr>
+                <td>Select a race</td>
+                <td>
+                    <!-- Drop down race list-->
+                    <select name="race" id="race" required>
+                        <option value="" selected disabled hidden>Select your race</option> <!-- This option only display for guide and cannot be chosen-->
+                        <option value="fun">Fun Run 5k</option>
+                        <option value="half">Half Marathon</option>
+                        <option value="full">Full Marathon</option>
+                    </select>
+                </td>
+            </tr>
+
+            <!-- Email field (Required)-->
+            <tr>
+                <td>Email</td>
+                <td><input type="email" id="email" required></td>
+            </tr>
+
+            <!-- Password (Required)-->
+            <tr>
+                <td>Password</td>
+                <td><input type="password" id="password" minlength="6" maxlength="12" required></td>
+            </tr>
+
+            <!-- Confirm password (Required) (But cannot check if user give different password since no JS script)-->
+            <tr>
+                <td>Confirm password</td>
+                <td><input type="password" id="confirm_password" minlength="6" maxlength="12" required></td>
+            </tr>
+
+            <!-- Age group (Requred) -->
+            <tr>
+                <td>Age group</td>
+                <td>
+                    <!-- Drop down age list -->
+                    <select name="age" id ="age" required>
+                        <option value = "" selected disabled hidden>Select your age group</option><!-- This option only display for guide and cannot be chosen-->
+                        <option value="u18">Under 18</option>
+                        <option value="18-30">18-30</option>
+                        <option value="30-50">30-50</option>
+                        <option value="o50">50+</option>
+                    </select>
+                </td>
+            </tr>
+
+            <!-- Submit button-->
+            <tr>
+                <td><input type="submit" value="Register"></td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>

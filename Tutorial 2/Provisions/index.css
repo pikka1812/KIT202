@@ -58,7 +58,7 @@ a:hover {
 
 input:not(input[type = "radio"], input[type = "submit"] ),select{
     border-radius: 6px;
-    padding: 8px 0px;
+    padding: 12px 0px;
     border: 1px solid rgb(204, 203, 203);
     width: 100%;
     text-align: center;

@@ -33,6 +33,7 @@ All texts are displayed in uppercases
     flex-direction: column;
     text-align: center;
     text-transform: uppercase;
+    margin:auto;
 }
 
 
@@ -140,6 +141,7 @@ it is displayed as inline-block.
     padding : 15px 35px;
     margin: 25px 0px;
     display: inline-block;
+    text-decoration: none;
 }
 
 
@@ -148,7 +150,6 @@ When a user change the window size, panels are displayed as row.
 */
 @media screen and (min-width: 960px ) {
     .panel {
-        max-width: 100%;
         flex-direction: row;
     }
     .pricing-plan:not(:last-child) {
